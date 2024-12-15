@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng Nhập_Cửa Hàng HP</title>
+  <link rel="stylesheet" href="./assets/css/login.css" />
+  <script
+    src="https://kit.fontawesome.com/c30645c964.js"
+    crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login is-active">
+      <div class="profile"><i class="fa fa-camera fa-2x"></i></div>
+        <div class="form-element">
+          <span><i class="fa fa-envelope"></i></span><input type="email" placeholder="Email" required />
+        </div>
+        <div class="form-element">
+          <span><i class="fa fa-lock"></i></span><input type="password" placeholder=" Mật Khẩu" required />
+        </div>
+      <button type="button" class="btn-login">Đăng Nhập</button>
+    </div>
+
+    <div class="register down" id = "reg-form">
+        <div class="form-element">
+          <span><i class="fa fa-user"></i></span><input id = "name" type="text" placeholder="Họ tên" required />
+          <span id = "tbname" class = "text-danger">*</span>
+        </div>
+        <div class="form-element">
+          <span><i class="fa fa-envelope"></i></span><input id = "email" type="email" placeholder="Email "/>
+          <span id = "tbEmail" class="text-danger">*</span>
+        </div>
+        <div class="form-element">
+          <span><i class="fa fa-lock"></i></span><input id = "password" type="password" placeholder="Mật Khẩu" required />
+          <span class = "form-message"></span>
+        </div>
+        <div class="form-element">
+          <span><i class="fa fa-lock"></i></span><input id = "password-re" type="password" placeholder="Nhập lại mật khẩu" required />
+          <span class = "form-message"></span>
+        </div>
+        <button type="button" class="btn-register">Đăng ký</button>
+    </div>
+
+    <div class="login-view-toggle">
+      <div class="sign-up-toggle is-active">
+         Bạn chưa có tài khoản ? <a href="#">Đăng ký ngay</a>
+      </div>
+        <div class="login-toggle">
+          Bạn đã có tài khoản ? <a href="#">Đăng nhập </a>
+        </div>
+    </div>
+  </div>
+</body>
+
+  <script src="./assets/js/login.js"></script>
+</html>
